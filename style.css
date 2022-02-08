@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@font-face {
+    font-family: 'MyriadPro';
+    src:local('MyriadPro-Regular'), 
+        url('../ЦНТИ/fonts/MyriadPro-Regular.woff') format("woff"),
+        url('../ЦНТИ/fonts/MyriadPro-Regular.ttf') format("ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MyriadPro';
+    src:local('MyriadPro-Regular'), 
+        url('../ЦНТИ/fonts/') format("woff"),
+        url('../ЦНТИ/fonts/MyriadPro-Regular.ttf') format("ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container {
+    font-family: 'MyriadPro';
+    max-width: 1170px;
+    margin: 40px auto;
+}
+
+.header__one {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    /* align-items: center; */
+    margin-bottom: 30px;
+}
+
+.logo {
+    margin-left: 20px;
+    margin-right: 110px;
+}
+
+.phones {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 19px;
+    line-height: 20px;
+    margin-right: 45px;
+    color: #6195bb;
+}
+
+.phones__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.call__phone {
+    font-size: 16px;
+    border-bottom: 1px dashed #000;
+}
+
+.information {
+    margin-left: auto;
+}
+
+.information__list_item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.download {
+    background-image: url(IMG/download.svg);
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    padding-left: 38px;
+}
+
+.key {
+    background-image: url(IMG/key.svg);
+    background-size: 16px 18px;
+    background-repeat: no-repeat;
+    background-position: 0 3px;
+    padding-left: 38px;
+}
+
+.mail {
+    background-image: url(IMG/mail.svg);
+    background-size: 18px 14px;
+    background-repeat: no-repeat;
+    background-position: 0 6px;
+    padding-left: 38px;
+}
+
+.header__two {
+    display: flex;
+    align-items: center;
+    max-width: 1170px;
+}
+
+.navbar {
+    background-color: #888888;
+}
+
+.navbar__main_item {
+    padding: 9px 20px;
+    font-size: 20px;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.navbar__indent {
+    padding-right: 90px;
+}
+
+.navbar__main {
+    display: flex;
+}
+
+.nav__box_1,
+.nav__box_2 {
+    margin-right: 6px;
+    height: 44px;
+}
+
+.nav__box_1 {
+    background-image: url(IMG/bluesquare.svg);
+    background-repeat: no-repeat;
+    background-size: 47px 44px;
+    background-position: 5px 0;
+    width: 50px;
+}
+
+.nav__box_2 {
+    background-image: url(IMG/orangesquare.svg);
+    background-repeat: no-repeat;
+    background-size: 47px 44px;
+    background-position: 5px 0;
+    width: 50px;
+}
+
+.nav__box_phone {
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.nav__box_search {
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+input[type="submit"] {
+    width: 10px; 
+    height: 20px; 
+    border: none;
+    background: url(IMG/trianglee.png) no-repeat; 
+    background-size: 10px 21px;
+    background-position: 0px 2px;
+}
+
+.search {
+    width: 384px; 
+    border: 7px solid #88888888;
+    min-height: 30px; 
+}
+
+input[type="search"] {
+    border: none; 
+    outline: none; 
+    -webkit-appearance: none; 
+    width: 340px;
+    padding: 8px;
+}
+
+.page {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    margin-left: 20px;
+    color: #888888;
+    font-size: 12px;
+}
+
+#page__exit {
+    display: flex;
+    align-items: center;
+}
+
+#page__exit li a::after {
+    content: "\2192";
+    font-size: 13px;
+    padding: 0 4px;
+    color: #888888;
+}
+
+.title__item {
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding-top: 97px;
+    padding-left: 156px;
+    background-image: url(IMG/orangesquare.svg);
+    background-repeat: no-repeat;
+    background-size: 36px 36px;
+    background-position: 100px 100px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.description__item {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #333333;
+    max-width: 860px;
+    padding-left: 97px;
+    padding-top: 260px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+}
+
+.main {
+    font-family: 'Roboto Condensed';
+    background-color: #eef6ff;
+    background-image: url(IMG/head.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 50px;
+    padding-bottom: 100px;
+}
+
+.about__teacher__main {
+    display: flex;
+    margin-bottom: 47px;
+}
+
+.about__teacher_title {
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    background-image: url(IMG/trianglee.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-left: 36px;
+    background-position: 0 3px;
+    font-size: 19px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.about__teacher_name {
+    margin-bottom: 20px;
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: normal;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.teacher_description_item:not(:last-child) {
+    margin-bottom: 22px;
+}
+
+.about__teacher_description3 {
+    max-width: 310px;
+    margin-bottom: 30px;
+    margin-left: 36px;
+    color: #4f4f4f;
+    line-height: 21px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about__teacher_description2 {
+    max-width: 442px;
+    margin-left: 36px;
+    color: #4f4f4f;
+    line-height: 21px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about__teacher_description1 {
+    max-width: 468px;
+    margin-bottom: 30px;
+    margin-left: 36px;
+    color: #4f4f4f;
+    line-height: 21px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about__teacher__main_left {
+    margin-right: 20px;
+}
+
+.teacher_description_item {
+    max-width: 380px;
+    font-size: 12px;
+    color: #939597;
+    background-image: url(IMG/done.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+.program {
+    margin-bottom: 30px;
+}
+
